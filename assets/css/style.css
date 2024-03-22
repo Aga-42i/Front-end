@@ -57,31 +57,162 @@ a {
 
 } 
 
+.header {
+  padding-top: 35px;
+  
+}
+
+.nav-links .link {
+margin-right: 4px ;
+}
+
+.arrow2{
+  margin-left: 0.31px;
+}
+
+
+.link {
+  color: #000;
+  margin-right: 3px;
+  padding: 4px;
+}
+
 header nav a {
   color: #000;
 }
 
-
+/* Mobile first */
 
 header nav {
   display: none;
 }
 
-@media(min-width:768px) {
-  .fa-bars {
-display: none;
-  }
+
+/* Introduction start */
+
+.introduction > .intro-left-side h1 span {
+  color: #FF8A56;
+
 }
 
-header nav {
-  display: flex;
-  gap: 3px;
-  align-items: center;
+.introduction > .intro-left-side h1 {
+  font-size: 37px;
+  margin-top: 42px;
+}
+/* mobile first */
+/* Introduction end */
+
+
+
+ /* 476px - telefon , 768-991 - planset , 991-1024 - laptop , 1024 - 1200 personal pc , 1400 + televizor   */
+
+.intro-right-side {
+  width: 300px;
+  /* margin-bottom: 40px; */
 }
 
-.link {
-  background-color: #000;
+.intro-right-side img {
+  width: 100%;
+  /* margin-bottom: 70px; */
+}
+
+.intro-left-side p {
+color: #666;
+font-size: 18px;
+}
+
+.intro-left-side .book-a-call .book-btn {
+  background-color: #222;
   color: #fff;
-  margin-right: 3px;
-  padding: 4px;
+  width: 151px;
+  height: 58px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  transition: 1.4s ease;
+  /* border: 5px groove red; + dashed  */
 }
+
+/* .book-btn:hover {
+  background-color: #ccc !important;
+} */
+
+.cv {
+  margin-left: 20px;
+  color: #000;
+}
+
+.arrow {
+  margin-left: 4px;
+  color: #000;
+}
+
+.shirketler h5 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.partnyorlar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.shirket:nth-child(3) ,
+.shirket:nth-child(4)
+{
+  display: none;
+}
+
+
+
+
+
+
+@media(min-width:768px) {
+
+  .fa-bars {
+    display: none;
+  }
+
+  header nav {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+  }
+  .introduction {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+
+  .introduction .intro-left-side h1 {
+    font-size: 3rem;
+
+  }
+
+
+
+  .intro-right-side {
+    width: 400px;
+    margin-top: 70px;
+  }
+
+.shirket:nth-child(3) {
+  display: flex;
+}
+
+}
+
+@media(min-width:992px ) {
+  .introduction .intro-left-side h1 {
+    font-size: 4.5rem;
+  }
+  .shirket:nth-child(4) {
+    display: flex;
+  }
+
+}
+
+
+
