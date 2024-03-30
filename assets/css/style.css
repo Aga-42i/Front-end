@@ -113,12 +113,14 @@ header nav {
 
 .intro-right-side img {
   width: 100%;
-  /* margin-bottom: 70px; */
+  margin-bottom: 70px;
 }
 
 .intro-left-side p {
 color: #666;
 font-size: 18px;
+margin-bottom: 38px;
+padding-top: 27px;
 }
 
 .intro-left-side .book-a-call .book-btn {
@@ -164,6 +166,33 @@ font-size: 18px;
   display: none;
 }
 
+.services-section ul{
+  list-style-type: square;
+}
+
+.services-section .service-icon {
+  width: 70px;
+}
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill , minmax(306px, 1fr));
+  gap: 90px;
+  
+  
+}
+
+.card {
+  border: none;
+  
+}
+
+.services-section h6 {
+  color: red;
+  padding-top: 70px;
+  padding-bottom: 35px;
+}
+
 
 
 
@@ -200,7 +229,10 @@ font-size: 18px;
 
 .shirket:nth-child(3) {
   display: flex;
-}
+} 
+/* .card:nth-child(3) {
+  flex-direction: column;
+} */
 
 }
 
@@ -211,6 +243,8 @@ font-size: 18px;
   .shirket:nth-child(4) {
     display: flex;
   }
+
+
 
 }
 
